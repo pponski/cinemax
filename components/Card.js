@@ -18,7 +18,7 @@ const Card = ({result, genres}) => {
                             <FaStar className="animate-pulse text-yellow-500 text-2xl mr-1"/>
                         </span>
                         {result.vote_average}
-                        <span className="flex items-center ml-4 leading-none line text-xs italic font-light">
+                        <span className="whitespace-nowrap flex items-center ml-4 leading-none line text-xs italic font-light">
                             <BsPeopleFill className="text-base mr-1"/>
                             {result.vote_count} votes
                         </span>
