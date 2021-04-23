@@ -10,7 +10,7 @@ const Card = ({result, genres}) => {
 
     return (
         <div className="mb-14">
-            <div className="px-2">
+            <div>
                 <p className="font-bold pb-2">{title} <span className="font-light">({release_date ? release_date.slice(0,4) : null})</span></p>
                 <div className="flex items-center pb-2 overflow-x-scroll scrollbar-hide">
                     <p className="flex items-center text-sm font-bold">
@@ -39,7 +39,7 @@ const Card = ({result, genres}) => {
                     src={`https://image.tmdb.org/t/p/original` + result.backdrop_path || result.poster_path}
                 />
             <div>
-                <p className="text-sm text-justify px-2">{result.overview.slice(0,200)}...</p>
+                <p className="text-sm text-justify">{result.overview.slice(0,200)}...</p>
             </div>
         </div>
     )
