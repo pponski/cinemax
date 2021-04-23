@@ -12,20 +12,22 @@ const Card = ({result, genres}) => {
         <div className="mb-14">
             <div className="px-2">
                 <p className="font-bold pb-2">{title} <span className="font-light">({release_date ? release_date.slice(0,4) : null})</span></p>
-                <div className="pb-2 flex justify-between items-center">
+                <div className="flex items-center pb-2 overflow-x-scroll scrollbar-hide">
                     <p className="flex items-center text-sm font-bold">
                         <span>
                             <FaStar className="animate-pulse text-yellow-500 text-2xl mr-1"/>
                         </span>
                         {result.vote_average}
-                        <span className="flex items-center justify-center ml-4 leading-none line text-xs italic font-light">
+                        <span className="flex items-center ml-4 leading-none line text-xs italic font-light">
                             <BsPeopleFill className="text-base mr-1"/>
                             {result.vote_count} votes
                         </span>
                     </p>
-                    <div className="flex space-x-2 text-sm">
+                    <div className="flex mx-5 space-x-3 text-xs">
                         {genre_ids.map(genre_id => genres.map(genre => genre.id === genre_id ? (
-                            <p key={genre_id} className="bg-blue-600 text-blue-50 px-2 py-1 rounded-full text-xs cursor-default">{genre.name}</p> 
+                            <div key={genre_id} className="flex items-center justify-center bg-blue-600 text-blue-50 px-3 py-1 rounded-full text-xs cursor-default">
+                              <p className="whitespace-nowrap">{genre.name}</p>
+                            </div> 
                         ) : null))}
                     </div>
                 </div>

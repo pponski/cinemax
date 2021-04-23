@@ -14,7 +14,7 @@ const Nav = ({setSectionTitle}) => {
     }
 
     return (
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800  lg:px-4">
+        <div className="min-w-screen bg-gradient-to-r from-blue-600 to-blue-800  lg:px-4">
             <nav className="h-full max-w-5xl mx-auto flex flex-col items-center lg:flex-row">
                 <Link href="/">
                     <a onClick={()=> setSectionTitle('Trending')} className="py-3 flex items-center justify-center text-3xl font-extrabold text-blue-50 w-screen text-center lg:justify-start">cinemax</a>
@@ -30,7 +30,7 @@ const Nav = ({setSectionTitle}) => {
                             <li 
                                 key={key}
                                 onClick={handleClick}
-                                className="animate-pulse  h-full py-3 lg:py-5 lg:w-40  px-6 flex items-center justify-center hover:text-blue-700 lg:hover:text-blue-50 lg:hover:bg-blue-800 lg:duration-300 cursor-pointer">{title}
+                                className="whitespace-nowrap animate-pulse  h-full py-3 lg:py-5 lg:w-40  px-6 flex items-center justify-center hover:text-blue-700 lg:hover:text-blue-50 lg:hover:bg-blue-800 lg:duration-300 cursor-pointer">{title}
                             </li>
                     )})}
                 </ul>
