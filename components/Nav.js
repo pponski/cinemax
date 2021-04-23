@@ -14,8 +14,8 @@ const Nav = ({setSectionTitle}) => {
     }
 
     return (
-        <div className="min-w-screen bg-gradient-to-r from-blue-600 to-blue-800  lg:px-4">
-            <nav className="h-full max-w-5xl mx-auto flex flex-col items-center lg:flex-row">
+        <div className="min-w-screen bg-gradient-to-r from-blue-600 to-blue-800  lg:px-5">
+            <nav className="h-full max-w-6xl mx-auto flex flex-col items-center lg:flex-row">
                 <Link href="/">
                     <a onClick={()=> setSectionTitle('Trending')} className="py-3 flex items-center justify-center text-3xl font-extrabold text-blue-50 w-screen text-center lg:justify-start">cinemax</a>
                 </Link>

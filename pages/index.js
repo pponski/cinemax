@@ -18,13 +18,15 @@ const Home = ({results}) => {
 
 
   return (
-    <div className="w-screen">
+    <>
       <Nav sectionTitle={sectionTitle} setSectionTitle={setSectionTitle}/>
-      <p
-        className="bg-blue-100 py-5 text-center font-bold text-2xl"
-      >{sectionTitle !== 'Trending' ? sectionTitle.slice(5) : sectionTitle}</p>
-      <Results genres={genres} results={results}/>
-    </div>
+      <div className="max-w-6xl mx-auto">
+        <p
+          className="bg-blue-100 px-5 py-10 text-center font-bold text-2xl md:text-left md:text-4xl md:py-16 xl:text-6xl xl:px-0"
+        >{sectionTitle !== 'Trending' ? sectionTitle.slice(5) : sectionTitle} Movies</p>
+        <Results genres={genres} results={results}/>
+      </div>
+    </>
   )
 }
 export default Home;
