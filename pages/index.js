@@ -22,7 +22,7 @@ const Home = ({results}) => {
       <Nav sectionTitle={sectionTitle} setSectionTitle={setSectionTitle}/>
       <div className="max-w-6xl mx-auto">
         <p
-          className="bg-blue-100 px-5 py-10 text-center font-bold text-2xl md:text-left md:text-4xl md:py-16 xl:text-6xl xl:px-0"
+          className="bg-blue-100 px-5 py-10 text-center font-bold text-3xl md:text-left md:text-5xl md:py-16 xl:text-6xl xl:px-0"
         >{sectionTitle !== 'Trending' ? sectionTitle.slice(5) : sectionTitle} Movies</p>
         <Results genres={genres} results={results}/>
       </div>
