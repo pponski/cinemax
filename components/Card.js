@@ -11,7 +11,7 @@ const Card = ({result, genres}) => {
     return (
         <div className="group mb-14 cursor-default transform md:hover:scale-105 duration-300">
             <div>
-                <p className="font-bold pb-2">{title} <span className="font-light">({release_date ? release_date.slice(0,4) : null})</span></p>
+                <p className="text-xl font-bold pb-2">{title} <span className="font-light">({release_date ? release_date.slice(0,4) : null})</span></p>
                 <div className="flex items-center pb-2 overflow-x-scroll scrollbar-hide">
                     <p className="flex items-center text-sm font-bold">
                         <span>
